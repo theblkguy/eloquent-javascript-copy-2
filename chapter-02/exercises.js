@@ -26,8 +26,12 @@ LOGS =>
 
 */
 
-function triangles() {
-  
+function triangles(num) {
+  let hash = '#'
+  while (hash.length <= num){
+    console.log(hash)
+    hash += '#'
+  }
 }
 
 
@@ -48,7 +52,19 @@ on the number:
 */
 
 function fizzBuzz(start, end) {
-  
+  let n = start
+  while(n <= end) {
+    if(n % 3 !== 0 && n % 5 !== 0) {
+      console.log(n)
+    } else if (n % 15 === 0) {
+      console.log('fizzbuzz')
+    } else if (n % 5 === 0) {
+      console.log('buzz')
+    } else {
+      console.log('fizz')
+    }
+    n++
+  }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
